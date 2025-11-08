@@ -1,0 +1,15 @@
+.homeContainer {
+  width: 100%;
+  height: 100vh; /* full viewport height */
+  display: flex;
+  flex-direction: column;
+}
+
+.scrollContainer {
+  flex: 1;
+  overflow-y: auto;
+  /* display: flex;
+  flex-direction: column; */
+  background-color: #dfe8fa;
+  background-image: url('./images/background.jpg');
+}
