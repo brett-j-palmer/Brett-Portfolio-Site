@@ -1,13 +1,13 @@
 import './Header.css';
 
-function Header(props) {
+function Header({title}) {
     return (
         <header className = 'header'>
             <div className = 'header__section'>
-                <p> {props.title} </p>
+                <p className = 'header__name'> {title} </p>
                 <p> Web & Mobile Developer </p>
             </div>
-            <div className = 'header__section links'>
+            <div className = 'header__section header__links'>
                 <p> Experience </p>
                 <p> Projects </p>
                 <p> Contact </p>
