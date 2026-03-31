@@ -1,0 +1,113 @@
+/* -------------------------------------------
+   EXPERIENCE CONTAINER
+------------------------------------------- */
+
+.container {
+    width: 75%; 
+    margin: 5vh auto;
+    padding: 2% 4%;
+    border-radius: 60px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    
+    background: linear-gradient(
+        250deg,
+        rgba(255, 255, 255, .3) 60%,
+        rgba(229, 239, 255, 0.3)
+    );
+    backdrop-filter: blur(40px); 
+    
+    box-shadow:
+        -5px 10px 30px rgba(0, 0, 0, 0.2),
+        inset -2px 2px 4px rgba(255, 255, 255, 0.2);
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    gap: 25px;
+}
+
+.container p:not(.hyphen), h1, img {
+    background: linear-gradient(
+        250deg,
+        rgba(255, 255, 255, .2) 85%,
+        rgba(229, 239, 255, 0.2)
+    );
+    backdrop-filter: blur(40px); 
+    padding: 15px;
+    border-color: rgba(99, 134, 186, 0.556);
+    border-radius: 15px;
+    box-shadow:
+        -2px 5px 10px rgba(36, 36, 36, 0.2),
+        inset -2px 2px 2px rgba(255, 255, 255, 0.502);
+}
+
+/* -------------------------------------------
+   LEFT COLUMN
+------------------------------------------- */
+
+.leftColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.logo {
+    width: 125px;
+    height: 125px;
+}
+.company {
+    font-size: 40px; 
+    font-weight: bold;
+    margin: 0;
+}
+.position {
+    color: #4b5563; 
+    font-size: 30px;
+    margin: 0;
+}
+
+.logoDatesContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    /* background-color: blue; */
+}
+
+.datesContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: red; */
+    justify-content: space-evenly;
+
+}
+
+.datesContainer p {
+    margin: 0;
+}
+
+.datesContainer .hyphen {
+    font-size: 24px;
+}
+
+.date {
+    /* background-color: blue; */
+    font-size: 20px;
+}
+
+/* -------------------------------------------
+   RIGHT COLUMN
+------------------------------------------- */
+
+.rightColumn {
+    display: flex;
+    flex-direction: column;
+    width: 75%
+}
+
+.description {
+    font-size: 26px;
+    color: #4b5563; 
+}
+
+

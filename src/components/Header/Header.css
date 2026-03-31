@@ -31,8 +31,8 @@
         rgba(209, 224, 250, 0.662)
     );
   box-shadow:
-        0 10px 40px rgba(0, 0, 0, 0.2),
-        inset -2px -2px 2px rgba(255, 255, 255, 0.4);
+        -10px 10px 40px rgba(0, 0, 0, 0.2),
+        inset -3px 3px 2px rgba(255, 255, 255, 0.4);
 }
 
 /* -------------------------------------------
@@ -71,7 +71,7 @@
   text-shadow: 2px 2px 4px #ffffff;
   box-shadow:
     0 10px 20px rgba(36, 36, 36, 0.159),
-    inset -2px -2px 2px rgba(255, 255, 255, 0.502);
+    inset -2px 2px 2px rgba(255, 255, 255, 0.502);
   cursor: pointer;
 }
 

@@ -3,7 +3,7 @@ import './Intro.css';
 
 function Intro(props) {
     return (
-        <div className = 'container'>
+        <div className = 'intro-container'>
             <img
                 src='/images/react-logo.png'
                 alt = 'Logo'

@@ -8,8 +8,7 @@
 .scrollContainer {
   flex: 1;
   overflow-y: auto;
-  /* display: flex;
-  flex-direction: column; */
   background-color: #dfe8fa;
   background-image: url('./images/background.jpg');
+
 }
