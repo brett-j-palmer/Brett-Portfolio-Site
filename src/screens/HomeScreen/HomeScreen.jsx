@@ -35,9 +35,9 @@ const HomeScreen = () => {
         <Header className = 'header' title="Brett Palmer"/>
         <Experience experience = {texasInstruments}/>
         <Experience experience = {uMaineResearch}/>
-        <Intro title = "Built a C# driver translating TCP/IP commands to SECS/GEM protocol, enabling 24/7 load-and-go operations"/>
+        {/* <Intro title = "Built a C# driver translating TCP/IP commands to SECS/GEM protocol, enabling 24/7 load-and-go operations"/>
         <Intro title = "Brett"/>
-        <Intro title = "Brett"/>
+        <Intro title = "Brett"/> */}
       </div>
     </div>
 
