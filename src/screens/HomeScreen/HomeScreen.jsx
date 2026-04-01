@@ -13,7 +13,9 @@ const texasInstruments = {
     "Engineered a C# conveyor control system to automate product transport and improve utilization across 200+ machines", 
     "Implemented SQL logic to update product locations and log command history, ensuring reliable factory operations"],
   startDate: "May 2024",
-  endDate: "Aug 2025"
+  endDate: "Aug 2025",
+  location: "Portland, ME",
+  skills: ["a", "b", "c"]
 }
 
 const uMaineResearch = {
@@ -25,7 +27,9 @@ const uMaineResearch = {
     "Developed a React application using the OpenAI API to seed errors in LLM outputs for participants to detect and correct",
     "Experimented with prompt engineering and guardrails to introduce controlled LLM inaccuracies for user evaluation"],
   startDate: "Sep 2024",
-  endDate: "May 2025"
+  endDate: "May 2025",
+  location: "Orono, ME",
+  skills: ["a", "b", "c"]
 }
 
 const HomeScreen = () => {
