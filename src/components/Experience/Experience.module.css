@@ -27,7 +27,7 @@
     /* height: 100%; */
 }
 
-.container p, .logoCompanyContainer {
+.rightColumn p, .position, .logoCompanyContainer, .datesLocationContainer {
     background: linear-gradient(
         250deg,
         rgba(255, 255, 255, .2) 85%,
@@ -50,7 +50,8 @@
     font-family: "Plus Jakarta Sans", sans-serif;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    justify-content: space-between;
+    gap: 25px;
 }
 
 .logoCompanyContainer {
@@ -80,7 +81,7 @@
 .datesLocationContainer, .skillsContainer {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin:0;
 }
 
@@ -90,9 +91,6 @@
     margin:0;
 }
 
-.skillsContainer p {
-
-}
 
 
 /* -------------------------------------------
@@ -114,26 +112,36 @@
     margin: 0;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
     .container {
         flex-direction: column;
         padding: 25px;
     }
+    .leftColumn {
+        gap: 20px;
+    }
+    .logoCompanyContainer {
+        justify-content: center;
+    }
     .company {
         align-self: center;
-        justify-self: center;;
+        justify-self: center;
+        font-size: 32px; 
 
     }
+    .position {
+        font-size: 25px;
+    }
     .logo {
-        width: 80px;
-        height: 80px;
+        width: 60px;
+        height: 60px;
     }
     .rightColumn {
         width: 100%;
-        gap: 25px;
+        gap: 20px;
     }
-    .logoDatesContainer {
-        justify-content: space-evenly;
+    .rightColumn p{
+        font-size: 18px;
     }
 }
 
