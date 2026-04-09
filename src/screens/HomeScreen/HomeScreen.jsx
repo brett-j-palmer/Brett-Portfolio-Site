@@ -32,6 +32,21 @@ const uMaineResearch = {
   skills: ["a", "b", "c"]
 }
 
+const uMaineMLA = {
+  title: "University of Maine",
+  position: "Maine Learning Assistant",
+  imageSource: "/images/university-of-maine-logo.png",
+  descriptions: [
+    "Assisted professor in creating coding exercises and study materials for an introductory Python course with 80+ students", 
+    "Conducted office hours to support students in programming coursework and exam preparation",
+    "Mentored 40+ students on study strategies, time management, and developing ownership of their learning"],
+  startDate: "Jan 2023",
+  endDate: "May 2026",
+  location: "Orono, ME",
+  skills: ["a", "b", "c"]
+}
+
+
 const HomeScreen = () => {
   return (
     <div className = 'homeContainer'>
@@ -39,6 +54,7 @@ const HomeScreen = () => {
         <Header className = 'header' title="Brett Palmer"/>
         <Experience experience = {texasInstruments}/>
         <Experience experience = {uMaineResearch}/>
+        <Experience experience = {uMaineMLA}/>
         {/* <Intro title = "Built a C# driver translating TCP/IP commands to SECS/GEM protocol, enabling 24/7 load-and-go operations"/>
         <Intro title = "Brett"/>
         <Intro title = "Brett"/> */}

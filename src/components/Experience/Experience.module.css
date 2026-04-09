@@ -65,14 +65,15 @@
     height: 100px;
 }
 .company {
-    font-size: 36px; 
+    font-size: 34px; 
     font-weight: 550;
     margin: 0;
+    color: #15181c; 
 }
 .position {
     font-style: italic;
     font-weight: 500;
-    color: #4b5563; 
+    color: #404955; 
     font-size: 30px;
     margin: 0;
     text-align: center;
@@ -118,7 +119,7 @@
         padding: 25px;
     }
     .leftColumn {
-        gap: 20px;
+        gap: 15px;
     }
     .logoCompanyContainer {
         justify-content: center;
@@ -126,19 +127,19 @@
     .company {
         align-self: center;
         justify-self: center;
-        font-size: 32px; 
+        font-size: 30px; 
 
     }
     .position {
-        font-size: 25px;
+        font-size: 24px;
     }
     .logo {
-        width: 60px;
-        height: 60px;
+        width: 50px;
+        height: 50px;
     }
     .rightColumn {
         width: 100%;
-        gap: 20px;
+        gap: 15px;
     }
     .rightColumn p{
         font-size: 18px;
