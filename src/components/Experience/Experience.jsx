@@ -12,9 +12,11 @@ function Experience({experience}) {
                     />
                 <h1 className={styles.company}>{experience.title}</h1>
                 </div>
-                <p className={styles.position}>
-                    {experience.position}
-                </p>
+                <div>
+                    <p className={styles.position}>
+                        {experience.position}
+                    </p>
+                </div>
                 <div className = {styles.datesLocationContainer}>
                     <p>{experience.startDate}  -  {experience.endDate}</p>
                     <p> {experience.location} </p>

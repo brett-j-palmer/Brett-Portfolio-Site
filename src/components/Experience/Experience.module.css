@@ -2,10 +2,15 @@
    EXPERIENCE CONTAINER
 ------------------------------------------- */
 
+div, p, h1 {
+    margin: 0
+}
+
 .container {
-    width: 85%; 
+    width: 80%; 
+    max-width: 900px;
     margin: 5vh auto;
-    padding: 3% 3%;
+    padding: 2.5% 2.5%;
     border-radius: 60px;
     border: 1px solid rgba(255, 255, 255, 0.25);
     
@@ -27,15 +32,13 @@
     /* height: 100%; */
 }
 
-.rightColumn p, .position, .logoCompanyContainer, .datesLocationContainer {
+.rightColumn p, .leftColumn div {
     background: linear-gradient(
         250deg,
         rgba(255, 255, 255, .2) 85%,
         rgba(229, 239, 255, 0.2)
     );
     backdrop-filter: blur(40px); 
-    padding: 15px;
-    border-color: rgba(99, 134, 186, 0.556);
     border-radius: 20px;
     box-shadow:
         -2px 5px 10px rgba(36, 36, 36, 0.2),
@@ -51,7 +54,11 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 25px;
+    gap: 20px;
+}
+
+.leftColumn div {
+    padding: 25px 20px;
 }
 
 .logoCompanyContainer {
@@ -61,33 +68,31 @@
 }
 
 .logo {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
 }
 .company {
-    font-size: 34px; 
+    font-size: 32px; 
     font-weight: 550;
-    margin: 0;
     color: #15181c; 
 }
 .position {
     font-style: italic;
     font-weight: 500;
     color: #404955; 
-    font-size: 30px;
-    margin: 0;
+    font-size: 26px;
     text-align: center;
 }
 
 .datesLocationContainer, .skillsContainer {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin:0;
 }
 
 .datesLocationContainer p, .skillsContainer p {
-    font-size: 18px;
+    font-size: 17px;
     color: #4b5563; 
     margin:0;
 }
@@ -102,13 +107,17 @@
     display: flex;
     font-family: "Plus Jakarta Sans", sans-serif;
     flex-direction: column;
-    width: 80%;
+    width: 70%;
     justify-content: space-between;
     gap: 20px;
 }
 
+.rightColumn p {
+    padding: 15px;
+}
+
 .description {
-    font-size: 22px;
+    font-size: 20px;
     color: #4b5563; 
     margin: 0;
 }
@@ -117,25 +126,31 @@
     .container {
         flex-direction: column;
         padding: 25px;
+        gap: 15px;
     }
     .leftColumn {
         gap: 15px;
     }
+    .leftColumn div {
+        padding: 10px 10px;
+    }
     .logoCompanyContainer {
         justify-content: center;
+        align-items: center;
+    }
+    .logo {
+        width: 50px;
+        height: 50px;
     }
     .company {
-        align-self: center;
-        justify-self: center;
         font-size: 30px; 
 
     }
     .position {
         font-size: 24px;
     }
-    .logo {
-        width: 50px;
-        height: 50px;
+    .datesLocationContainer {
+        justify-content: space-evenly;
     }
     .rightColumn {
         width: 100%;
