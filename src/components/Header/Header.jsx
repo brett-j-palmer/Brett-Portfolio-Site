@@ -8,9 +8,15 @@ function Header({title}) {
                 <p> Web & Mobile Developer </p>
             </div>
             <div className = 'header__section header__links'>
-                <p> Experience </p>
-                <p> Projects </p>
-                <p> Contact </p>
+                <a>
+                    <p> Experience </p>
+                </a>
+                <a>
+                    <p> Projects </p>
+                </a>
+                <a>
+                    <p> Contact </p>
+                </a>
             </div>
         </header>
     )

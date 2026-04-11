@@ -9,6 +9,6 @@
   flex: 1;
   overflow-y: auto;
   background-color: #dfe8fa;
-  background-image: url('/images/background.png');
+  background-image: url('../../assets/images/background.png');
 
 }

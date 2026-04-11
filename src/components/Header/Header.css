@@ -7,7 +7,7 @@
   position: sticky;
   top: 25px;
   z-index: 1000;
-  padding: 20px 0;
+  padding: 20px 10px;
   margin: 25px;
 
   justify-self: center;
@@ -68,7 +68,7 @@
   transition: background-color 0.5s ease, box-shadow 0.3s ease;
 }
 
-.header__links :hover {
+.header__links a :hover {
   background-color: #e5f4f653; 
   text-shadow: 2px 2px 4px #ffffff;
   box-shadow:

@@ -7,7 +7,7 @@ import './HomeScreen.css';
 const texasInstruments = {
   title: "Texas Instruments",
   position: "Software Engineering Intern",
-  imageSource: "/images/texas-instruments-logo.png",
+  imageSource: "../src/assets/images/texas-instruments-logo.png",
   descriptions: [
     "Built a C# driver translating TCP/IP commands to SECS/GEM protocol, enabling 24/7 load-and-go operations", 
     "Engineered a C# conveyor control system to automate product transport and improve utilization across 200+ machines", 
@@ -21,7 +21,7 @@ const texasInstruments = {
 const uMaineResearch = {
   title: "University of Maine",
   position: "AI Research Assistant",
-  imageSource: "/images/university-of-maine-logo.png",
+  imageSource: "../src/assets/images/university-of-maine-logo.png",
   descriptions: [
     "Conducted a Wizard-of-Oz study on user interaction with artificial intelligence, focusing on trust in LLM outputs", 
     "Developed a React application using the OpenAI API to seed errors in LLM outputs for participants to detect and correct",
@@ -35,7 +35,7 @@ const uMaineResearch = {
 const uMaineMLA = {
   title: "University of Maine",
   position: "Maine Learning Assistant",
-  imageSource: "/images/university-of-maine-logo.png",
+  imageSource: "../src/assets/images/university-of-maine-logo.png",
   descriptions: [
     "Assisted professor in creating coding exercises and study materials for an introductory Python course with 80+ students", 
     "Conducted office hours to support students in programming coursework and exam preparation",
@@ -52,12 +52,10 @@ const HomeScreen = () => {
     <div className = 'homeContainer'>
       <div className = 'scrollContainer'>
         <Header className = 'header' title="Brett Palmer"/>
-        <Experience experience = {texasInstruments}/>
+        <Intro/>
+        <Experience experience = {texasInstruments} id="experience"/>
         <Experience experience = {uMaineResearch}/>
         <Experience experience = {uMaineMLA}/>
-        {/* <Intro title = "Built a C# driver translating TCP/IP commands to SECS/GEM protocol, enabling 24/7 load-and-go operations"/>
-        <Intro title = "Brett"/>
-        <Intro title = "Brett"/> */}
       </div>
     </div>
 

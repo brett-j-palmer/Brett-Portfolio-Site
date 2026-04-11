@@ -5,12 +5,12 @@ function Experience({experience}) {
         <div className = {styles.container}>
             <div className = {styles.leftColumn}>
                 <div className= {styles.logoCompanyContainer}>
-                <img
+                    <img
                         src={experience.imageSource}
                         alt = 'Logo'
                         className = {styles.logo}
                     />
-                <h1 className={styles.company}>{experience.title}</h1>
+                    <h1 className={styles.company}>{experience.title}</h1>
                 </div>
                 <div>
                     <p className={styles.position}>
