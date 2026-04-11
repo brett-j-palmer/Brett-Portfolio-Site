@@ -1,33 +1,37 @@
 import styles from './Intro.module.css';
-// import { ReactComponent as LinkedinIcon } from "/images/linkedin-logo.svg";
+
+import headShot from "../../assets/images/headshot.png";
+import githubLogo from "../../assets/svgs/github-logo.svg";
+import linkedinLogo from "../../assets/svgs/linkedin-logo.svg";
+import resumeIcon from "../../assets/svgs/resume.svg";
 
 function Intro() {
     return (
         <div className = {styles.container}>
             <div className = {styles.leftColumn}>
                 <img
-                    src= "../src/assets/images/headshot.png"
+                    src = {headShot}
                     alt = 'Headshot'
                     className = {styles.headshot}
                 />
                 <div className={styles.iconContainer}>
                     <a href="https://github.com/brett-j-palmer">
                         <img
-                            src= "../src/assets/svgs/github-logo.svg"
+                            src = {githubLogo}
                             alt = 'GitHub'
                             className = {styles.icon}
                         />
                     </a>
                     <a href ="https://www.linkedin.com/in/brett-j-palmer/">
                         <img
-                            src= "../src/assets/svgs/linkedin-logo.svg"
+                            src= {linkedinLogo}
                             alt = 'LinkedIn'
                             className = {styles.icon}
                         />
                     </a>
                     <a>
                         <img
-                            src= "../src/assets/svgs/resume.svg"
+                            src= {resumeIcon}
                             alt = 'Resume'
                             className = {styles.icon}
                         />

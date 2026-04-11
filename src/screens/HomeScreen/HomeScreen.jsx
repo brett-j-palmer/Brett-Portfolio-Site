@@ -4,10 +4,13 @@ import Intro from '../../components/Intro/Intro.jsx';
 import Experience from '../../components/Experience/Experience.jsx';
 import './HomeScreen.css';
 
+import texasInstrumentsLogo from "../../assets/images/texas-instruments-logo.png";
+import uMaineLogo from "../../assets/images/university-of-maine-logo.png"
+
 const texasInstruments = {
   title: "Texas Instruments",
   position: "Software Engineering Intern",
-  imageSource: "../src/assets/images/texas-instruments-logo.png",
+  imageSource: texasInstrumentsLogo,
   descriptions: [
     "Built a C# driver translating TCP/IP commands to SECS/GEM protocol, enabling 24/7 load-and-go operations", 
     "Engineered a C# conveyor control system to automate product transport and improve utilization across 200+ machines", 
@@ -21,7 +24,7 @@ const texasInstruments = {
 const uMaineResearch = {
   title: "University of Maine",
   position: "AI Research Assistant",
-  imageSource: "../src/assets/images/university-of-maine-logo.png",
+  imageSource: uMaineLogo,
   descriptions: [
     "Conducted a Wizard-of-Oz study on user interaction with artificial intelligence, focusing on trust in LLM outputs", 
     "Developed a React application using the OpenAI API to seed errors in LLM outputs for participants to detect and correct",
@@ -35,7 +38,7 @@ const uMaineResearch = {
 const uMaineMLA = {
   title: "University of Maine",
   position: "Maine Learning Assistant",
-  imageSource: "../src/assets/images/university-of-maine-logo.png",
+  imageSource: uMaineLogo,
   descriptions: [
     "Assisted professor in creating coding exercises and study materials for an introductory Python course with 80+ students", 
     "Conducted office hours to support students in programming coursework and exam preparation",
