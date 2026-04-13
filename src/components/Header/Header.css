@@ -65,6 +65,11 @@
   transition: background-color 0.5s ease, box-shadow 0.3s ease;
 }
 
+.header__links a {
+  color: inherit;            
+  text-decoration: none; 
+}
+
 .header__links a :hover {
   background-color: #e5f4f653; 
   text-shadow: 2px 2px 4px #ffffff;
@@ -76,13 +81,11 @@
 
 @media (max-width: 910px) {
    .header {
-    justify-content: space-around;
-    font-size: 0.9em; 
+    justify-content: center;
+    font-size: 0.75em; 
+    padding: 10px 0px;
   }
   .header__links {
     display:none
-  }
-  .header__section {
-    gap: 20px;
   }
 }

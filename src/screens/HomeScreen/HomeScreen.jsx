@@ -56,7 +56,8 @@ const HomeScreen = () => {
       <div className = 'scrollContainer'>
         <Header className = 'header' title="Brett Palmer"/>
         <Intro/>
-        <Experience experience = {texasInstruments} id="experience"/>
+        <h1 id="experience" > Experiences </h1>
+        <Experience experience = {texasInstruments}/>
         <Experience experience = {uMaineResearch}/>
         <Experience experience = {uMaineMLA}/>
       </div>

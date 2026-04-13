@@ -8,7 +8,7 @@ function Header({title}) {
                 <p> Web & Mobile Developer </p>
             </div>
             <div className = 'header__section header__links'>
-                <a>
+                <a href = "#experience">
                     <p> Experience </p>
                 </a>
                 <a>
