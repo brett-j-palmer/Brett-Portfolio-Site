@@ -75,8 +75,8 @@ div, p, h1 {
 }
 
 .icon {
-    width: 50px;
-    height: 50px;
+    width: 55px;
+    height: 55px;
     padding: 10px;
     background: linear-gradient(
         250deg,
@@ -92,8 +92,8 @@ div, p, h1 {
 }
 
 .iconContainer a :hover {
-    width: 60px;
-    height: 60px;
+    width: 65px;
+    height: 65px;
 }
 
 
@@ -112,12 +112,12 @@ div, p, h1 {
 
 .rightColumn p {
     padding: 10px;
-    font-size: 22px;
+    font-size: 21px;
     font-style: italic;
     color: #4b5563; 
 }
 
-@media (max-width: 950px) {
+@media (max-width: 900px) {
     .container {
         width: 90%;
         flex-direction: column;
@@ -129,6 +129,7 @@ div, p, h1 {
         flex-direction: row;
         padding: 10px;
         justify-content: space-around;
+        align-items: center;
     }
 
     .headshot {
@@ -139,9 +140,7 @@ div, p, h1 {
     }
 
     .iconContainer {
-        width: 75%;
-        justify-content: space-around;
-        margin-top: 0px;
+        display: contents;
     }
 
     .icon {

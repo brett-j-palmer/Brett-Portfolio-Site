@@ -29,7 +29,7 @@ function Intro() {
                             className = {styles.icon}
                         />
                     </a>
-                    <a>
+                    <a href="https://drive.google.com/file/d/1Lark-WP7rrqB1cM-0AXbEzxtVPNx8EUF/view?usp=sharing">
                         <img
                             src= {resumeIcon}
                             alt = 'Resume'
