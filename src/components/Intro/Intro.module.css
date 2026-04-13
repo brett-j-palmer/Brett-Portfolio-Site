@@ -9,7 +9,7 @@ div, p, h1 {
 .container {
     width: 85%; 
     max-width: 950px;
-    margin: 25px auto;
+    margin: 3vh auto;
     padding: 3% 3%;
     border-radius: 60px;
     border: 1px solid rgba(255, 255, 255, 0.25);
