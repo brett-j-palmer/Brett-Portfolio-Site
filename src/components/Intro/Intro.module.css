@@ -7,11 +7,11 @@ div, p, h1 {
 }
 
 .container {
-    width: 85%; 
-    max-width: 950px;
+    width: 90%; 
+    /* max-width: 950px; */
     margin-top: 3vh;
     margin: 3vh auto 4vh;
-    padding: 3% 3%;
+    padding: 30px 30px;
     border-radius: 60px;
     border: 1px solid rgba(255, 255, 255, 0.25);
     
@@ -113,7 +113,7 @@ div, p, h1 {
 
 .rightColumn p {
     padding: 10px;
-    font-size: 21px;
+    font-size: 1.5rem;
     font-style: italic;
     color: #4b5563; 
 }
@@ -155,7 +155,7 @@ div, p, h1 {
     }
     
     .rightColumn p {
-        font-size: 1.2em;
+        font-size: 1.2rem;
     }
 }
 

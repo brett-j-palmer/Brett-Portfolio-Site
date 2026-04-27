@@ -56,10 +56,14 @@ const HomeScreen = () => {
       <div className = 'scrollContainer'>
         <Header className = 'header' title="Brett Palmer"/>
         <Intro/>
-        <h1 id="experience" > Experiences </h1>
-        <Experience experience = {texasInstruments}/>
-        <Experience experience = {uMaineResearch}/>
-        <Experience experience = {uMaineMLA}/>
+        <div className = 'experienceSection' >
+          <h1 id="experienceHeader" className = 'sectionHeader' > Experiences </h1>
+          <div className='experienceGrid' >
+            <Experience experience = {texasInstruments}/>
+            <Experience experience = {uMaineResearch}/>
+            <Experience experience = {uMaineMLA}/>
+          </div>
+        </div>
       </div>
     </div>
 
