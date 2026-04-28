@@ -15,24 +15,24 @@ function Experience({experience}) {
                         {experience.position}
                     </p>
                 </div>
-
-                {/* <div className = {styles.skillsContainer}>
-                        <p className={styles.date}> C#/.NET 1</p>
-                        <p className={styles.date}> SQL</p>
-                        <p className={styles.date}> TCP/IP</p>
-                </div> */}
-        
             </div>
+
             <div className = {styles.datesLocationContainer}>
                 <p>{experience.startDate}  -  {experience.endDate}</p>
                 <p> {experience.location} </p>
             </div>
+
             <div className = {styles.description}>
                {experience.descriptions.map((description => (
                     <p>  • {description} </p>
                )))}
             </div>
-            {/* <ContactBar /> */}
+
+            {/* <div className = {styles.skillsContainer}>
+                <p className={styles.date}> C#/.NET 1</p>
+                <p className={styles.date}> SQL</p>
+                <p className={styles.date}> TCP/IP</p>
+            </div> */}
         </div>
     )
 }

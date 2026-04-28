@@ -52,4 +52,9 @@
         grid-template-columns: 1fr;
         width: 95%;
     }
+
+    .experienceGrid > :last-child:nth-child(odd) {
+        grid-column: auto; 
+        width: 90%;
+    }
 }

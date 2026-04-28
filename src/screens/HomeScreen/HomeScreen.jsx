@@ -57,12 +57,13 @@ const HomeScreen = () => {
         <Header className = 'header' title="Brett Palmer"/>
         <Intro/>
         <div className = 'experienceSection' >
-          <h1 id="experienceHeader" className = 'sectionHeader' > Experiences </h1>
+          <h1 id="experienceHeader" className = 'sectionHeader' > Experience </h1>
           <div className='experienceGrid' >
             <Experience experience = {texasInstruments}/>
             <Experience experience = {uMaineResearch}/>
             <Experience experience = {uMaineMLA}/>
           </div>
+          <h1 id="projectsHeader" className = 'sectionHeader' > Projects </h1>
         </div>
       </div>
     </div>
