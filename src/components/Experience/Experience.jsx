@@ -1,40 +1,47 @@
 import styles from './Experience.module.css';
 
-function Experience({experience}) {
-    return (
-        <div className = {styles.container}>
-            <div className = {styles.header}>
-                <img
-                        src={experience.imageSource}
-                        alt = 'Logo'
-                        className = {styles.logo}
-                />
-                <div className= {styles.headerText}>
-                    <h1 className={styles.company}>{experience.title}</h1>
-                    <p className={styles.position}>
-                        {experience.position}
-                    </p>
-                </div>
-            </div>
+function Experience({ experience }) {
+  const {
+    imageSource,
+    title,
+    position,
+    startDate,
+    endDate,
+    location,
+    descriptions,
+  } = experience;
 
-            <div className = {styles.datesLocationContainer}>
-                <p>{experience.startDate}  -  {experience.endDate}</p>
-                <p> {experience.location} </p>
-            </div>
+  return (
+    <div className={styles.container}>
+      <div className={styles.header}>
+        <div className = {styles.headerTop}>
+            <img src={imageSource} alt="Logo" className={styles.logo} />
 
-            <div className = {styles.description}>
-               {experience.descriptions.map((description => (
-                    <p>  • {description} </p>
-               )))}
+            <div className={styles.headerText}>
+                <h1 className={styles.company}>{title}</h1>
+                <p className={styles.position}>{position}</p>
             </div>
-
-            {/* <div className = {styles.skillsContainer}>
-                <p className={styles.date}> C#/.NET 1</p>
-                <p className={styles.date}> SQL</p>
-                <p className={styles.date}> TCP/IP</p>
-            </div> */}
         </div>
-    )
+
+        <div className={styles.datesLocationContainer}>
+            <p>{startDate} - {endDate}</p>
+            <p>{location}</p>
+        </div>
+      </div>
+
+      <div className={styles.description}>
+        {descriptions.map((description, index) => (
+          <p key={index}>{description}</p>
+        ))}
+      </div>
+
+      {/* <div className={styles.skillsContainer}>
+        <p className={styles.date}>C#/.NET 1</p>
+        <p className={styles.date}>SQL</p>
+        <p className={styles.date}>TCP/IP</p>
+      </div> */}
+    </div>
+  );
 }
 
 export default Experience;

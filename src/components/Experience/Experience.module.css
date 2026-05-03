@@ -1,47 +1,60 @@
 /* -------------------------------------------
+   RESET
+------------------------------------------- */
+
+div,
+p,
+h1 {
+  margin: 0;
+}
+
+/* -------------------------------------------
+   SHARED PANEL STYLES
+------------------------------------------- */
+
+.header,
+.description p {
+  padding: 15px;
+  border-radius: 1em;
+  backdrop-filter: blur(40px);
+  background: linear-gradient(
+    250deg,
+    rgba(255, 255, 255, 0.2) 85%,
+    rgba(219, 230, 255, 0.2)
+  );
+  box-shadow:
+    -2px 5px 10px rgba(36, 36, 36, 0.2),
+    inset -2px 2px 2px rgba(255, 255, 255, 0.502);
+}
+
+/* -------------------------------------------
    EXPERIENCE CONTAINER
 ------------------------------------------- */
 
-div, p, h1 {
-    margin: 0
-}
-
 .container {
-    width: 100%; 
-    max-width: 950px;
-    padding: 25px;
-    border-radius: 60px;
-    border: 1px solid rgba(255, 255, 255, 0.25);
-    
-    background: linear-gradient(
-        250deg,
-        rgba(255, 255, 255, .3) 60%,
-        rgba(219, 230, 255, 0.4)
-    );
-    backdrop-filter: blur(40px); 
-    
-    box-shadow:
-        -5px 10px 30px rgba(0, 0, 0, 0.2),
-        inset -2px 2px 4px rgba(255, 255, 255, 0.2);
-    
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-    font-family: "Plus Jakarta Sans", sans-serif;
-}
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
 
-.datesLocationContainer, .description p, .header {
-    background: linear-gradient(
-        250deg,
-        rgba(255, 255, 255, .2) 85%,
-        rgba(219, 230, 255, 0.2)
-    );
-    backdrop-filter: blur(40px);
-    padding: 15px; 
-    border-radius: 1em;
-    box-shadow:
-        -2px 5px 10px rgba(36, 36, 36, 0.2),
-        inset -2px 2px 2px rgba(255, 255, 255, 0.502);
+  width: 100%;
+  max-width: 950px;
+  padding: 25px;
+
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 60px;
+
+  font-family: 'Plus Jakarta Sans', sans-serif;
+
+  background: linear-gradient(
+    250deg,
+    rgba(255, 255, 255, 0.3) 60%,
+    rgba(219, 230, 255, 0.4)
+  );
+  backdrop-filter: blur(40px);
+
+  box-shadow:
+    -5px 10px 30px rgba(0, 0, 0, 0.2),
+    inset -2px 2px 4px rgba(255, 255, 255, 0.2);
 }
 
 /* -------------------------------------------
@@ -49,108 +62,123 @@ div, p, h1 {
 ------------------------------------------- */
 
 .header {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.headerTop {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     gap: 20px;
 }
 
 .headerText {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
 .logo {
-    width: auto;
-    height: 60px;
+  width: auto;
+  height: 60px;
 }
 
 .company {
-    font-size: 1.6rem; 
-    font-weight: 600;
-    color: #404d5d; 
+  color: #404d5d;
+  font-size: 1.6rem;
+  font-weight: 600;
 }
 
 .position {
-    font-style: italic;
-    font-weight: 500;
-    color: #4b5563; 
-    font-size: 1.25rem;
-    text-align: center;
+  color: #4b5563;
+  font-size: 1.25rem;
+  font-style: italic;
+  font-weight: 500;
+  text-align: center;
 }
 
-.datesLocationContainer, .skillsContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+/* -------------------------------------------
+   DETAILS / SKILLS
+------------------------------------------- */
+
+.datesLocationContainer,
+.skillsContainer {
+  display: flex;
+  justify-content: space-around;
 }
 
-.datesLocationContainer p, .skillsContainer p {
-    font-size: 1rem;
-    color: #4b5563; 
+.datesLocationContainer p,
+.skillsContainer p {
+  color: #4b5563;
+  font-size: 1rem;
 }
-
-
 
 /* -------------------------------------------
    DESCRIPTION
 ------------------------------------------- */
 
 .description {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .description p {
-    font-size: 1.1rem;
-    color: #4b5563; 
+  color: #4b5563;
+  font-size: 1.1rem;
 }
+
+/* -------------------------------------------
+   RESPONSIVE DESIGN
+------------------------------------------- */
 
 @media (max-width: 1000px) {
-    .container {
-        width: 90%;
-        flex-direction: column;
-        padding: 25px;
-        gap: 15px;
-    }
-    .header {
-        gap: 25px;
-        justify-content: center;
-    }
-    .headerText {
-        gap: 10px;
-    }
-    .logo {
-        width:60px;
-        height: 60px;
-    }
-    .company {
-        font-size: 1.3rem 
-    }
-    .position {
-        font-size: 1rem;
-    }
-    .datesLocationContainer {
-        justify-content: space-evenly;
-    }
-    .datesLocationContainer p {
-         font-size: 15px;
-    }
-    .description {
-        width: 100%;
-        gap: 15px;
-    }
-    .description p{
-        font-size: 16px;
-    }
+  .container {
+    width: 90%;
+    gap: 15px;
+    border-radius: 40px;
+    padding: 20px;
+  }
+
+  .headerTop {
+    gap: 10px;
+  }
+
+  .header {
+    gap: 15px;
+  }
+
+  .logo {
+    width: 55px;
+    height: 55px;
+  }
+
+  .company {
+    font-size: 1.3rem;
+  }
+
+  .position {
+    font-size: 1rem;
+  }
+
+  .datesLocationContainer {
+    justify-content: space-evenly;
+    gap:20px;
+  }
+
+  .datesLocationContainer p {
+    font-size: 15px;
+  }
+
+  .description {
+    gap: 15px;
+  }
+
+  .description p {
+    font-size: 16px;
+  }
 }
-
-
-
-
