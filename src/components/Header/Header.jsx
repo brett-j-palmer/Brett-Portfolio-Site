@@ -11,7 +11,7 @@ function Header({title}) {
                 <a href = "#experienceHeader">
                     <p> Experience </p>
                 </a>
-                <a>
+                <a href = "#projectsHeader">
                     <p> Projects </p>
                 </a>
                 <a>

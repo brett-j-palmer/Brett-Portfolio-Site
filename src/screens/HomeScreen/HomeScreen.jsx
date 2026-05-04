@@ -2,10 +2,12 @@
 import Header from '../../components/Header/Header.jsx';
 import Intro from '../../components/Intro/Intro.jsx';
 import Experience from '../../components/Experience/Experience.jsx';
+import Project from '../../components/Project/Project.jsx'
 import './HomeScreen.css';
 
 import texasInstrumentsLogo from "../../assets/images/texas-instruments-logo.png";
 import uMaineLogo from "../../assets/images/university-of-maine-logo.png"
+import iwacApp from "../../assets/images/iwac-app.png"
 
 const texasInstruments = {
   title: "Texas Instruments",
@@ -49,6 +51,25 @@ const uMaineMLA = {
   skills: ["a", "b", "c"]
 }
 
+const experiences = [
+  texasInstruments,
+  uMaineResearch,
+  uMaineMLA
+]
+
+const project = {
+  imageSource: iwacApp,
+  title: "IWAC Conference Mobile App",
+  descriptions: [
+    "Developed a full-stack mobile application for the International Writing Across the Curriculum Conference, a non-profit writing conference.",
+    "Enabled attendees to manage schedules, connect with others, and build personalized agendas.",
+    "Replaced expensive third-party solutions with a streamlined, open-source alternative.",
+  ],
+  skills: ["React Native", "Supabase", "Resend", "Jest"],
+  takeaway:
+    "Deployed a fully functional mobile app to both iOS and Android, reducing client costs from $8000 to $40.",
+};
+
 
 const HomeScreen = () => {
   return (
@@ -59,12 +80,17 @@ const HomeScreen = () => {
         <div className = 'experienceSection' >
           <h1 id="experienceHeader" className = 'sectionHeader' > Experience </h1>
           <div className='experienceGrid' >
-            <Experience experience = {texasInstruments}/>
-            <Experience experience = {uMaineResearch}/>
-            <Experience experience = {uMaineMLA}/>
+            {experiences.map((experience, index) => (
+              <Experience key = {index} experience = {experience}/>
+            ))}
           </div>
-          <h1 id="projectsHeader" className = 'sectionHeader' > Projects </h1>
         </div>
+
+        <div className = 'projectsSection' >
+          <h1 id="projectsHeader" className = 'sectionHeader' > Projects </h1>
+          <Project project = {project} />
+        </div>
+
       </div>
     </div>
 

@@ -1,0 +1,207 @@
+/* =========================
+   GLASS SYSTEM
+========================= */
+
+.imagePanel,
+.titlePanel,
+.descriptionPanel,
+.takeawayPanel,
+.skill {
+  padding: 20px;
+  border-radius: 20px;
+  backdrop-filter: blur(40px);
+  background: linear-gradient(250deg, rgba(255,255,255,0.2) 85%, rgba(219,230,255,0.2));
+  box-shadow: -2px 5px 10px rgba(36,36,36,0.2),
+              inset -2px 2px 2px rgba(255,255,255,0.5);
+}
+
+/* =========================
+   CONTAINER
+========================= */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  width: 90%;
+  padding: 25px;
+
+  border-radius: 50px;
+  border: 1px solid rgba(255,255,255,0.25);
+
+  background: linear-gradient(250deg, rgba(255,255,255,0.3) 60%, rgba(219,230,255,0.4));
+  backdrop-filter: blur(40px);
+
+  box-shadow: -5px 10px 30px rgba(0,0,0,0.2),
+              inset -2px 2px 4px rgba(255,255,255,0.2);
+
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  color: #4b5563;
+}
+
+/* =========================
+   LAYOUT
+========================= */
+
+.topRow {
+  display: flex;
+  gap: 20px;
+  align-items: stretch;
+}
+
+/* =========================
+   IMAGE
+========================= */
+
+.imagePanel {
+  /* flex: 0 0 450px;        */
+  flex: 0 0 clamp(400px, 40%, 450px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+}
+
+.image {
+  max-height: 300px;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 16px;
+  opacity: .95;
+}
+
+/* =========================
+   CONTENT
+========================= */
+
+.contentPanel {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* TITLE */
+.titlePanel {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+}
+
+.title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #404d5d;
+}
+
+.client {
+  font-size: 1.1rem;
+  font-style: italic;
+}
+
+/* DESCRIPTION */
+.descriptionPanel {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
+.description {
+  font-size: 1.15rem;
+  line-height: 1.5;
+}
+
+/* SKILLS */
+.skillsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skillsLabel {
+    align-self: center;
+    text-decoration: underline;
+    font-style: italic;
+    font-size: 1.2em;
+    margin-right: 20px;
+}
+
+.skill {
+  padding: 10px 16px;
+  border-radius: 999px;
+  font-size: 1rem;
+  background: rgba(255,255,255,0.4);
+  backdrop-filter: blur(10px);
+}
+
+/* TAKEAWAY */
+.takeawayPanel {
+  text-align: center;
+}
+
+.takeaway {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #414f61;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1000px) {
+
+  .container {
+    padding: 20px;
+  }
+
+  .imagePanel,
+  .titlePanel,
+  .descriptionPanel,
+  .takeawayPanel,
+  .skill {
+    padding: 15px;
+  }
+
+  .topRow {
+    flex-direction: column;
+  }
+
+  .imagePanel {
+    width: 100%;
+    max-height: 250px;
+    padding: 10px;
+  }
+
+  .image {
+    max-height: 220px;
+  }
+
+  .descriptionPanel {
+    gap: 10px;
+  }
+
+  .title {
+    font-size: 1.2rem;
+  }
+
+  .description {
+    font-size: 0.95rem;
+  }
+
+  .skill {
+    font-size: 0.8rem;
+    padding: 8px 12px;
+  }
+
+  .takeaway {
+    font-size: 0.9rem;
+  }
+}
