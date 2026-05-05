@@ -7,7 +7,10 @@ import './HomeScreen.css';
 
 import texasInstrumentsLogo from "../../assets/images/texas-instruments-logo.png";
 import uMaineLogo from "../../assets/images/university-of-maine-logo.png"
-import iwacApp from "../../assets/images/iwac-app.png"
+import iwacAppImage from "../../assets/images/iwac-app.png"
+import gratitudeImage from "../../assets/images/gratitude.png"
+import jobAggregatorImage from "../../assets/images/job-aggregator.png"
+import poppinImage from "../../assets/images/poppin.png"
 
 const texasInstruments = {
   title: "Texas Instruments",
@@ -60,10 +63,10 @@ const experiences = [
   uMaineMLA
 ]
 
-const project = {
-  imageSource: iwacApp,
-  imageCaption: "Sample screens from the IWAC Application",
-  title: "IWAC Conference Mobile App",
+const iwacApp = {
+  title: "IWAC: Conference Mobile App",
+  imageSource: iwacAppImage,
+  imageCaption: "Agenda, Session Details, and Profile screens",
   descriptions: [
     "Designed and built a full-stack mobile application for the International Writing Across the Curriculum Conference, a non-profit academic writing conference.",
     "Gave attendees a single place to browse sessions, build personalized schedules, and connect with others.",
@@ -72,6 +75,48 @@ const project = {
   skills: ["Mobile Development", "Project Management", "React Native", "Supabase", "Resend", "Jest"],
   takeaway: "Shipped a fully functional app to both iOS and Android, bringing client costs down from $8,000 to $40.",
 }
+
+const gratitudeApp = {
+  title: "Gratitude: Journaling App",
+  imageSource: gratitudeImage, 
+  imageCaption: "Feed, Login, and Profile screens",
+  descriptions: [
+    "Architected a cross-platform mobile application with secure authentication, cloud data storage, and real-time synchronization to ensure a seamless user experience.",
+    "Implemented scalable social features including profile management, structured post privacy, and dynamic content feeds.",
+    "Designed backend data models and client-side state management to support responsive and consistent interactions across devices.",
+  ],
+  skills: ["Mobile Development", "React Native", "Firebase", "Authentication", "Real-Time Systems"],
+  takeaway: "Built a scalable mobile platform with real-time social features and secure cloud integration.",
+}
+
+const jobAggregator = {
+  title: "Job Search Aggregator",
+  imageSource: jobAggregatorImage, 
+  imageCaption: "Histograms of Glassdoor (left) and Indeed (right) salary listings",
+  descriptions: [
+    "Developed automated data pipelines to scrape and process 225+ job listings per minute from multiple online platforms.",
+    "Built search and filtering functionality to support job discovery by location, salary, and relevance.",
+    "Optimized data processing workflows for efficiency and reliability using structured parsing and transformation techniques.",
+  ],
+  skills: ["Data Analysis", "Python", "Selenium", "Beautiful Soup", "Pandas"],
+  takeaway: "Enabled efficient large-scale job data aggregation and improved usability through targeted filtering tools.",
+}
+
+const poppin = {
+  title: "Poppin: Social Media Website",
+  imageSource: poppinImage,
+  imageCaption: "Poppin social media feed, featuring movies and games",
+  descriptions: [
+    "Designed and developed an interest-based social media platform for sharing and discovering creative content.",
+    "Engineered backend systems and APIs to support scalable user interactions and data storage.",
+    "Implemented personalization logic to deliver customized content feeds based on user behavior.",
+  ],
+  skills: ["React", "Node.js", "MongoDB", "Full-Stack Development"],
+  takeaway: "Created a full-stack social platform with personalized content delivery and scalable infrastructure.",
+}
+
+const projects = [iwacApp, gratitudeApp, jobAggregator, poppin];
+
 
 const HomeScreen = () => {
   return (
@@ -90,7 +135,10 @@ const HomeScreen = () => {
 
         <div className = 'projectsSection' >
           <h1 id="projectsHeader" className = 'sectionHeader' > Projects </h1>
-          <Project project = {project} />
+          {projects.map((project, index) => (
+            <Project key = {index} project = {project}/>
+          ))}
+          {/* <Project project = {project} /> */}
         </div>
 
       </div>
