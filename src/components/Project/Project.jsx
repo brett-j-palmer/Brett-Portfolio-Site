@@ -3,6 +3,7 @@ import styles from './Project.module.css';
 function Project({ project }) {
   const {
     imageSource,
+    imageCaption,
     title,
     client,
     descriptions,
@@ -22,11 +23,10 @@ function Project({ project }) {
 
         {/* IMAGE PANEL */}
         <div className={styles.imagePanel}>
-            <img
-            src={imageSource}
-            alt={title}
-            className={styles.image}
-            />
+          <div className={styles.imageWrapper}>
+            <img src={imageSource} alt={title} className={styles.image} />
+            <p className={styles.imageCaption}>{imageCaption}</p>
+          </div>
         </div>
 
         {/* CONTENT PANEL */}

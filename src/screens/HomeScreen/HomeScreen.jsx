@@ -59,13 +59,14 @@ const experiences = [
 
 const project = {
   imageSource: iwacApp,
+  imageCaption: "Sample screens from the IWAC Application",
   title: "IWAC Conference Mobile App",
   descriptions: [
     "Developed a full-stack mobile application for the International Writing Across the Curriculum Conference, a non-profit writing conference.",
     "Enabled attendees to manage schedules, connect with others, and build personalized agendas.",
     "Replaced expensive third-party solutions with a streamlined, open-source alternative.",
   ],
-  skills: ["React Native", "Supabase", "Resend", "Jest"],
+  skills: ["Mobile Development", "Project Management", "React Native", "Supabase", "Resend", "Jest"],
   takeaway:
     "Deployed a fully functional mobile app to both iOS and Android, reducing client costs from $8000 to $40.",
 };
