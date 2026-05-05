@@ -40,7 +40,7 @@
   font-family: 'Plus Jakarta Sans', sans-serif;
   color: #4b5563;
   transition: transform 0.3s ease-in-out, 
-              box-shadow 0.3s ease-in-out,
+              box-shadow 0.3s ease-in-out;
 }
 
 .container:hover {
