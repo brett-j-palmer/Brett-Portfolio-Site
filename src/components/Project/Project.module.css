@@ -39,6 +39,14 @@
 
   font-family: 'Plus Jakarta Sans', sans-serif;
   color: #4b5563;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.container:hover {
+  transform: translateY(-4px);
+  box-shadow: 
+      -8px 15px 30px rgba(0, 0, 0, 0.25),
+      inset -3px 3px 4px rgba(255, 255, 255, 0.35);
 }
 
 /* =========================
@@ -56,13 +64,15 @@
 ========================= */
 
 .imagePanel {
-  flex: 0 0 450px;
+  flex: 0 0 clamp(400px, 40%, 450px);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;      
   overflow: hidden;       
-  padding: 15px;             
+  padding: 15px;    
+  gap: 10px;         
   border-radius: 20px;
 }
 
@@ -81,33 +91,10 @@
 }
 
 .imageCaption {
-  position: absolute;
-  bottom: 24px;
-  left: 24px;
-  right: 24px;
-  z-index: 2;
-
-  padding: 12px 18px;
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: #3b4450;
   text-align: center;
-
-  border-radius: 14px;
-
-  background: linear-gradient(
-    120deg,
-    rgba(255,255,255,0.7),
-    rgba(255,255,255,0.5)
-  );
-
-  backdrop-filter: blur(20px) saturate(140%);
-  -webkit-backdrop-filter: blur(20px) saturate(140%);
-
-  border: 1px solid rgba(255,255,255,0.4);
-
-  box-shadow:
-    0 4px 20px rgba(0, 0, 0, 0.256),
-    inset 0 1px 1px rgba(255,255,255,0.6);
+  width: 100%;
 }
 /* =========================
    CONTENT
@@ -118,7 +105,7 @@
   min-width: 0;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 15px;
 }
 
 /* TITLE */
@@ -147,7 +134,7 @@
   flex: 1 1 auto;
   flex-direction: column;
   justify-content: space-evenly;
-  gap: 20px;
+  gap: 15px;
 }
 
 .description {
@@ -171,9 +158,9 @@
 }
 
 .skill {
-  padding: 10px 16px;
+  padding: 8px 14px;
   border-radius: 999px;
-  font-size: 1rem;
+  font-size: .9rem;
   background: rgba(255,255,255,0.4);
   backdrop-filter: blur(10px);
 }
@@ -210,12 +197,13 @@
 
   .topRow {
     flex-direction: column;
+    width: 100%;
   }
 
   .imagePanel {
-    /* flex: 0 0 250px; */
-    padding: 10px;
+    padding: 15px;
     flex: none;
+    gap: 10px;
   }
   
   .imageWrapper {
@@ -224,6 +212,7 @@
 
   .imageCaption {
     font-size: 0.8rem;
+    width: 350px;
   }
 
   .descriptionPanel {

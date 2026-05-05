@@ -25,8 +25,8 @@ function Project({ project }) {
         <div className={styles.imagePanel}>
           <div className={styles.imageWrapper}>
             <img src={imageSource} alt={title} className={styles.image} />
-            <p className={styles.imageCaption}>{imageCaption}</p>
           </div>
+          <p className={styles.imageCaption}>{imageCaption}</p>
         </div>
 
         {/* CONTENT PANEL */}

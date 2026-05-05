@@ -14,9 +14,10 @@ const texasInstruments = {
   position: "Software Engineering Intern",
   imageSource: texasInstrumentsLogo,
   descriptions: [
-    "Built a C# driver translating TCP/IP commands to SECS/GEM protocol, enabling 24/7 load-and-go operations", 
-    "Engineered a C# conveyor control system to automate product transport and improve utilization across 200+ machines", 
-    "Implemented SQL logic to update product locations and log command history, ensuring reliable factory operations"],
+    "Built a C# driver translating TCP/IP commands to SECS/GEM protocol, enabling continuous 24/7 load-and-go operations across the factory floor.",
+    "Engineered a conveyor control system in C# to automate product transport, improving machine utilization across a fleet of 200+.",
+    "Implemented SQL logic to track product locations and log command history, ensuring reliable and auditable factory operations.",
+  ],
   startDate: "May 2024",
   endDate: "Aug 2025",
   location: "Portland, ME",
@@ -28,9 +29,10 @@ const uMaineResearch = {
   position: "AI Research Assistant",
   imageSource: uMaineLogo,
   descriptions: [
-    "Conducted a Wizard-of-Oz study on user interaction with artificial intelligence, focusing on trust in LLM outputs", 
-    "Developed a React application using the OpenAI API to seed errors in LLM outputs for participants to detect and correct",
-    "Experimented with prompt engineering and guardrails to introduce controlled LLM inaccuracies for user evaluation"],
+    "Conducted a Wizard-of-Oz study on how users interact with AI, with a focus on trust and skepticism toward LLM-generated outputs.",
+    "Built a React application using the OpenAI API to deliberately seed errors into LLM responses for participants to detect and correct.",
+    "Experimented with prompt engineering techniques and guardrails to introduce controlled inaccuracies suitable for user evaluation.",
+  ],
   startDate: "Sep 2024",
   endDate: "May 2025",
   location: "Orono, ME",
@@ -42,9 +44,10 @@ const uMaineMLA = {
   position: "Maine Learning Assistant",
   imageSource: uMaineLogo,
   descriptions: [
-    "Assisted professor in creating coding exercises and study materials for an introductory Python course with 80+ students", 
-    "Conducted office hours to support students in programming coursework and exam preparation",
-    "Mentored 40+ students on study strategies, time management, and developing ownership of their learning"],
+    "Collaborated with the professor to design coding exercises and study materials for an introductory Python course serving 80+ students.",
+    "Led weekly office hours to support students through programming assignments and exam preparation.",
+    "Mentored 40+ students on study strategies, time management, and building ownership of their own learning.",
+  ],
   startDate: "Jan 2023",
   endDate: "May 2026",
   location: "Orono, ME",
@@ -62,15 +65,13 @@ const project = {
   imageCaption: "Sample screens from the IWAC Application",
   title: "IWAC Conference Mobile App",
   descriptions: [
-    "Developed a full-stack mobile application for the International Writing Across the Curriculum Conference, a non-profit writing conference.",
-    "Enabled attendees to manage schedules, connect with others, and build personalized agendas.",
-    "Replaced expensive third-party solutions with a streamlined, open-source alternative.",
+    "Designed and built a full-stack mobile application for the International Writing Across the Curriculum Conference, a non-profit academic writing conference.",
+    "Gave attendees a single place to browse sessions, build personalized schedules, and connect with others.",
+    "Cut client costs by replacing expensive third-party event software with a lean, open-source alternative built from scratch.",
   ],
   skills: ["Mobile Development", "Project Management", "React Native", "Supabase", "Resend", "Jest"],
-  takeaway:
-    "Deployed a fully functional mobile app to both iOS and Android, reducing client costs from $8000 to $40.",
-};
-
+  takeaway: "Shipped a fully functional app to both iOS and Android, bringing client costs down from $8,000 to $40.",
+}
 
 const HomeScreen = () => {
   return (
