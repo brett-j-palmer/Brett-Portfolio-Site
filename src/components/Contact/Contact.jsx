@@ -9,14 +9,14 @@ function Contact() {
             Looking to grow your online presence?
             </h1>
             <p className={styles.subhook}>
-            I build apps and websites focussed on style, usability, and reliability.
+            I create apps and websites focussed on style, usability, and reliability.
             </p>
         </div>
 
         <div className={styles.bodyPanel}>
             <p className={styles.body}>
             I build clean, functional applications with an emphasis on user experience and solid engineering.
-            My goal is always the same: something that works well and holds up over time.
+            My goal is always the same: a product that works well and holds up over time.
             </p>
 
             <p className={styles.body}>
@@ -25,7 +25,7 @@ function Contact() {
             </p>
 
             <p className={styles.callout}>
-            If you liked what you saw here, imagine what I could build for <em>you</em>.
+            If you like what you see here, imagine what I could build for <em>you</em>.
             </p>
         </div>
 
