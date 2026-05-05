@@ -14,7 +14,7 @@ function Header({title}) {
                 <a href = "#projectsHeader">
                     <p> Projects </p>
                 </a>
-                <a>
+                <a href = "#contactHeader">
                     <p> Contact </p>
                 </a>
             </div>

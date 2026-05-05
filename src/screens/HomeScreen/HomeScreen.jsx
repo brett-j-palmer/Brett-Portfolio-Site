@@ -2,7 +2,8 @@
 import Header from '../../components/Header/Header.jsx';
 import Intro from '../../components/Intro/Intro.jsx';
 import Experience from '../../components/Experience/Experience.jsx';
-import Project from '../../components/Project/Project.jsx'
+import Project from '../../components/Project/Project.jsx';
+import Contact from '../../components/Contact/Contact.jsx';
 import './HomeScreen.css';
 
 import texasInstrumentsLogo from "../../assets/images/texas-instruments-logo.png";
@@ -105,7 +106,7 @@ const jobAggregator = {
 const poppin = {
   title: "Poppin: Social Media Website",
   imageSource: poppinImage,
-  imageCaption: "Poppin social media feed, featuring movies and games",
+  imageCaption: "Poppin social media feed, featuring a movie and game review",
   descriptions: [
     "Designed and developed an interest-based social media platform for sharing and discovering creative content.",
     "Engineered backend systems and APIs to support scalable user interactions and data storage.",
@@ -138,7 +139,11 @@ const HomeScreen = () => {
           {projects.map((project, index) => (
             <Project key = {index} project = {project}/>
           ))}
-          {/* <Project project = {project} /> */}
+        </div>
+
+        <div className='contactSection'>
+          <h1 id="contactHeader" className='sectionHeader'>Contact</h1>
+          <Contact/>
         </div>
 
       </div>
