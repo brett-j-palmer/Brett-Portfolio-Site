@@ -66,6 +66,7 @@ const experiences = [
 
 const iwacApp = {
   title: "IWAC: Conference Mobile App",
+  sourceURL: "https://github.com/umaine-capstone-iwac/IWAC-Conference-App",
   imageSource: iwacAppImage,
   imageCaption: "Agenda, Session Details, and Profile screens",
   descriptions: [
@@ -79,6 +80,7 @@ const iwacApp = {
 
 const gratitudeApp = {
   title: "Gratitude: Journaling App",
+  sourceURL: "https://snack.expo.dev/@brettpalmer/brett-gratitude-final",
   imageSource: gratitudeImage, 
   imageCaption: "Feed, Login, and Profile screens",
   descriptions: [
@@ -92,6 +94,7 @@ const gratitudeApp = {
 
 const jobAggregator = {
   title: "Job Search Aggregator",
+  sourceURL: "https://github.com/brett-j-palmer/JobSearch-DataAggregator",
   imageSource: jobAggregatorImage, 
   imageCaption: "Histograms of Glassdoor (left) and Indeed (right) salary listings",
   descriptions: [
@@ -105,6 +108,7 @@ const jobAggregator = {
 
 const poppin = {
   title: "Poppin: Social Media Website",
+  sourceURL: "https://github.com/brett-j-palmer/WEBMB_Poppin",
   imageSource: poppinImage,
   imageCaption: "Poppin social media feed, featuring a movie and game review",
   descriptions: [

@@ -1,10 +1,12 @@
 import styles from './Project.module.css';
+import githubLogo from "../../assets/svgs/github-logo.svg";
 
 function Project({ project }) {
   const {
+    title,
+    sourceURL,
     imageSource,
     imageCaption,
-    title,
     client,
     descriptions,
     skills,
@@ -16,7 +18,14 @@ function Project({ project }) {
 
       <div className={styles.titlePanel}>
         <h1 className={styles.title}>{title}</h1>
-        {client && <p className={styles.client}>{client}</p>}
+        <a href={sourceURL}>
+                <img
+                    src = {githubLogo}
+                    alt = 'GitHub'
+                    className = {styles.icon}
+                />
+        </a>
+        {/* {client && <p className={styles.client}>{client}</p>} */}
       </div>
 
       <div className={styles.topRow}>
@@ -26,7 +35,9 @@ function Project({ project }) {
           <div className={styles.imageWrapper}>
             <img src={imageSource} alt={title} className={styles.image} />
           </div>
+          <div className = {styles.captionRow}>
           <p className={styles.imageCaption}>{imageCaption}</p>
+          </div>
         </div>
 
         {/* CONTENT PANEL */}
