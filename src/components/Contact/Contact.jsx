@@ -31,7 +31,7 @@ function Contact() {
 
         <div className={styles.closingPanel}>
             <p className={styles.closing}>
-            Open to freelance work and full-time roles:
+            Open to freelance work:
             </p>
             <p className={styles.email}>
             <strong>brett.palmer.dev@gmail.com</strong>
