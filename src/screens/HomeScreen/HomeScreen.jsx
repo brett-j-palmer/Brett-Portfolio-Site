@@ -1,4 +1,3 @@
-
 import Header from '../../components/Header/Header.jsx';
 import Intro from '../../components/Intro/Intro.jsx';
 import Experience from '../../components/Experience/Experience.jsx';
@@ -13,17 +12,32 @@ import gratitudeImage from "../../assets/images/gratitude.png"
 import jobAggregatorImage from "../../assets/images/job-aggregator.png"
 import poppinImage from "../../assets/images/poppin.png"
 
-const texasInstruments = {
+const texasInstrumentsFullTime = {
+  title: "Texas Instruments",
+  position: "Software Engineer",
+  imageSource: texasInstrumentsLogo,
+  descriptions: [
+    "Building a SQL scheduling engine that automates and coordinates 500+ types of qualification runs across the factory.",
+    "Increased throughput of an inherited toolset by 40% within the first three months in the role.",
+    "Ramped up on an inherited codebase within weeks, becoming the sole engineer maintaining and extending it."
+  ],
+  startDate: "Jun 2026",
+  endDate: "Present",
+  location: "Portland, ME",
+  skills: ["a", "b", "c"]
+}
+
+const texasInstrumentsIntern = {
   title: "Texas Instruments",
   position: "Software Engineering Intern",
   imageSource: texasInstrumentsLogo,
   descriptions: [
-    "Built a C# driver translating TCP/IP commands to SECS/GEM protocol, enabling continuous 24/7 load-and-go operations across the factory floor.",
     "Engineered a conveyor control system in C# to automate product transport, improving machine utilization across a fleet of 200+.",
-    "Implemented SQL logic to track product locations and log command history, ensuring reliable and auditable factory operations.",
+    "Built a C# driver translating TCP/IP commands to SECS/GEM protocol, enabling continuous 24/7 load-and-go operations across the factory floor.",
+    "Implemented SQL procedures to update product locations and log command history, ensuring reliable factory transporation."
   ],
-  startDate: "May 2024",
-  endDate: "Aug 2025",
+  startDate: "Summer 2024",
+  endDate: "Summer 2025",
   location: "Portland, ME",
   skills: ["a", "b", "c"]
 }
@@ -59,7 +73,8 @@ const uMaineMLA = {
 }
 
 const experiences = [
-  texasInstruments,
+  texasInstrumentsFullTime,
+  texasInstrumentsIntern,
   uMaineResearch,
   uMaineMLA
 ]

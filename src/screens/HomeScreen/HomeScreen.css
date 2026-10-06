@@ -44,24 +44,19 @@
 }
 
 .experienceGrid > * {
-  flex: 1 1 30%;
+  flex: 1 1 calc(50% - 2vh);
   min-width: 0;
   width: 100%;
   transition: transform 0.6s ease;
 }
 
-.experienceGrid:has(> :nth-child(1):hover) > :nth-child(1),
-.experienceGrid:has(> :nth-child(2):hover) > :nth-child(2) {
+.experienceGrid > *:hover {
   transform: scale(1.02);
 }
 
 .experienceGrid > :last-child:nth-child(odd) {
   flex: 0 0 50%;
   transition: transform 0.6s ease
-}
-
-.experienceGrid > :last-child:nth-child(odd):hover {
-  transform: scale(1.02);
 }
 
 @media (max-width: 1000px) {

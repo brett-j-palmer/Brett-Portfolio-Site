@@ -39,9 +39,9 @@ function Intro() {
                 </div>
             </div>
             <div className = {styles.rightColumn}>
-               <p className = {styles.description}> I am a driven fourth-year Computer Science student with minors in New Media, Game Development, and Mathematics. </p>
-               <p className = {styles.description}> I have interned as a software engineer in semiconductor manufacturing, built a mobile conference management application, and conducted research in human-AI interaction.  </p>
-               <p className = {styles.description}> I look forward to applying my technical skills, creativity, and collaborative mindset in the software engineering field to positively impact others. </p>
+               <p className = {styles.description}> I'm a software engineer who loves exploring how people and technology work together. I develop automation systems as Texas Instruments, and produce mobile applications in my free time. </p>
+               <p className = {styles.description}> I graduated from the University of Maine in 2026 with a 4.0 in Computer Science. I broadened my skillset with minors in New Media, Game Development, and Mathematics. </p>
+               <p className = {styles.description}> I'm driven by creativity, collaboration, and building software that makes a real impact. </p>
             </div>
         </div>
     )
