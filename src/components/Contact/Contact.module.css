@@ -10,7 +10,7 @@
   border-radius: 32px;
   background: linear-gradient(
     250deg,
-    rgba(255, 255, 255, 0.7) 60%,
+    rgba(255, 255, 255, 0.6) 60%,
     rgba(219, 230, 255, 0.85)
   );
   backdrop-filter: blur(40px);

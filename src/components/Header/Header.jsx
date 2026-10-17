@@ -7,16 +7,10 @@ function Header({title}) {
                 <p className = 'header__name'> {title} </p>
                 <p> Web & Mobile Developer </p>
             </div>
-            <div className = 'header__section header__links'>
-                <a href = "#experienceHeader">
-                    <p> Experience </p>
-                </a>
-                <a href = "#projectsHeader">
-                    <p> Projects </p>
-                </a>
-                <a href = "#contactHeader">
-                    <p> Contact </p>
-                </a>
+            <div className = 'header__section header__links headerLinkGroup'>
+                <a className="headerLink" href="#experienceHeader">Experience</a>
+                <a className="headerLink" href="#projectsHeader">Projects</a>
+                <a className="headerLink" href="#contactHeader">Contact</a>
             </div>
         </header>
     )

@@ -49,6 +49,43 @@
   padding: 0px 8px;
 }
 
+.headerLinkGroup {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.headerLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  border: 0;
+  border-radius: 15px;
+  color: inherit;
+  background-color: transparent;
+  font: inherit;
+  font-size: 0.9em;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background-color 0.5s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.headerLink:hover,
+.headerLink[aria-pressed="true"] {
+  background-color: #e5f4f653;
+  text-shadow: 2px 2px 4px #ffffff;
+  box-shadow:
+    0 10px 20px rgba(36, 36, 36, 0.159),
+    inset -2px 2px 2px rgba(255, 255, 255, 0.502);
+}
+
+.headerLink:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
+}
+
 /* -------------------------------------------
    SPECIAL CLASSES
 ------------------------------------------- */
@@ -56,28 +93,6 @@
 .header__name{
   font-weight:600;
   font-size: 1.2em;
-}
-
-.header__links p {
-  font-size: 0.9em;
-  padding: 8px 16px;
-  border-radius: 15px;
-  background-color: transparent;
-  transition: background-color 0.5s ease, box-shadow 0.3s ease;
-}
-
-.header__links a {
-  color: inherit;            
-  text-decoration: none; 
-}
-
-.header__links a :hover {
-  background-color: #e5f4f653; 
-  text-shadow: 2px 2px 4px #ffffff;
-  box-shadow:
-    0 10px 20px rgba(36, 36, 36, 0.159),
-    inset -2px 2px 2px rgba(255, 255, 255, 0.502);
-  cursor: pointer;
 }
 
 @media (max-width: 750px) {
