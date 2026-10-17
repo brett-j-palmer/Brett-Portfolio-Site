@@ -1,171 +1,44 @@
-/* =========================
-   CONTAINER
-========================= */
-
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 15px;
-
-  width: 90%;
-  padding: 20px;
-
-  border-radius: 50px;
+  gap: 16px;
+  width: min(90%, 900px);
+  box-sizing: border-box;
+  padding: clamp(20px, 4vw, 36px);
   border: 1px solid rgba(255, 255, 255, 0.25);
-
-  background: linear-gradient(250deg, rgba(255, 255, 255, 0.3) 60%, rgba(219, 230, 255, 0.4));
+  border-radius: 32px;
+  background: linear-gradient(
+    250deg,
+    rgba(255, 255, 255, 0.7) 60%,
+    rgba(219, 230, 255, 0.85)
+  );
   backdrop-filter: blur(40px);
-
   box-shadow:
     -5px 10px 30px rgba(0, 0, 0, 0.2),
     inset -2px 2px 4px rgba(255, 255, 255, 0.2);
-
   font-family: 'Plus Jakarta Sans', sans-serif;
-  color: #4b5563;
-  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
-}
-
-.container:hover {
-    transform: translateY(-4px);
-    box-shadow: 
-        -8px 15px 30px rgba(0, 0, 0, 0.25),
-        inset -3px 3px 4px rgba(255, 255, 255, 0.35);
-}
-
-/* =========================
-   SHARED GLASS PANEL
-========================= */
-
-.hookPanel,
-.bodyPanel,
-.contactCard,
-.closingPanel {
-  padding: 15px 20px;
-  border-radius: 20px;
-  backdrop-filter: blur(40px);
-  background: linear-gradient(250deg, rgba(255, 255, 255, 0.2) 85%, rgba(219, 230, 255, 0.2));
-  box-shadow:
-    -2px 5px 10px rgba(36, 36, 36, 0.2),
-    inset -2px 2px 2px rgba(255, 255, 255, 0.5);
-  width: 100%;
-  box-sizing: border-box;
-}
-
-/* =========================
-   HOOK PANEL
-========================= */
-
-.hookPanel {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.hook {
-  font-size: 1.75rem;
-  font-weight: 700;
-  color: #2e3a47;
-  line-height: 1.25;
-  margin: 0;
-}
-
-.subhook {
-  font-size: 1.1rem;
-  color: #5a6878;
-  font-style: italic;
-  margin: 0;
-}
-
-/* =========================
-   BODY PANEL
-========================= */
-
-.bodyPanel {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.body {
-  font-size: 1.1rem;
-  line-height: 1.7;
-  color: #4b5563;
-  margin: 0;
-}
-
-.callout {
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: #2e3a47;
-  margin: 0;
-}
-
-.callout em {
-  font-style: italic;
-  color: #4a7ab5;
-}
-
-/* =========================
-   CLOSING PANEL
-========================= */
-
-.closingPanel {
   text-align: center;
 }
 
-.closing {
-  font-size: 1.1rem;
-  line-height: 1.8;
-  color: #4b5563;
+.message {
   margin: 0;
+  color: #4b5563;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  line-height: 1.6;
 }
 
 .email {
-    font-size: 1.4rem;
-    color: #2e3a47;
-    font-weight: 700;
-    font-size: 1.5em;
+  color: #2e3a47;
+  font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+  font-weight: 700;
+  overflow-wrap: anywhere;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
 }
-/* =========================
-   RESPONSIVE
-========================= */
 
-@media (max-width: 1000px) {
-  .container {
-    padding: 20px;
-    gap: 20px;
-  }
-
-  .hookPanel,
-  .bodyPanel,
-  .contactCard,
-  .closingPanel {
-    padding: 15px;
-  }
-
-  .hook {
-    font-size: 1.5rem;
-  }
-
-  .subhook {
-    font-size: 1rem;
-  }
-
-  .body {
-    font-size: 0.95rem;
-  }
-
-  .callout {
-    font-size: 1.05rem;
-  }
-
-  .contactCard {
-    max-width: 100%;
-  }
-
-  .email {
-    font-size: 1.1em;
-  }
+.email:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 4px;
+  border-radius: 2px;
 }
