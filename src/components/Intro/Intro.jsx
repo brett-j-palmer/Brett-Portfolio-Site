@@ -35,7 +35,7 @@ function Intro() {
                             className = {styles.icon}
                         />
                     </a>
-                    <a  href="https://drive.google.com/file/d/1EnMmoHc8CqCB6-dkjM4PLNZUsEYSFaxj/view?usp=sharing"
+                    <a  href="https://drive.google.com/file/d/1kpx2C2cfrrigIEFHsB8PUm61Mi-E7Nzd/view?usp=sharing"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
@@ -50,7 +50,7 @@ function Intro() {
             <div className = {styles.rightColumn}>
                <p className = {styles.description}> I'm a software engineer who loves exploring how people and technology work together. I develop automation systems as Texas Instruments, and produce mobile applications in my free time. </p>
                <p className = {styles.description}> I graduated from the University of Maine in 2026 with a 4.0 in Computer Science. I broadened my skillset with minors in New Media, Game Development, and Mathematics. </p>
-               <p className = {styles.description}> I love building user experiences that empower people with creative tools, and providing an online community for them to form connections around what they’ve made. </p>
+               <p className = {styles.description}> I love building user experiences that empower people with creative tools, then providing an online community for them to form connections around what they’ve made. </p>
             </div>
         </div>
     )

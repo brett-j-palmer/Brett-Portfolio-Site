@@ -40,12 +40,10 @@
 
   font-family: 'Plus Jakarta Sans', sans-serif;
   color: #4b5563;
-  transition: transform 0.3s ease-in-out, 
-              box-shadow 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out;
 }
 
 .container:hover {
-  transform: translateY(-4px);
   box-shadow: 
       -8px 15px 30px rgba(0, 0, 0, 0.25),
       inset -3px 3px 4px rgba(255, 255, 255, 0.35);
@@ -66,7 +64,7 @@
 ========================= */
 
 .imagePanel {
-  flex: 0 0 clamp(500px, 40%, 600px);
+  flex: 0 0 clamp(400px, 45%,600px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -75,14 +73,29 @@
   padding: 15px;    
   gap: 10px;         
   border-radius: 20px;
-  transition: flex 0.8s ease-in-out;
 }
 
 .imageWrapper {
   position: relative;     
   width: 100%;
+  box-sizing: border-box;
   border-radius: 15px;
   overflow: hidden;       
+}
+
+.portraitImageWrapper {
+  padding-inline: clamp(24px, 9%, 50px);
+}
+
+.imageLink {
+  display: block;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.imageLink:focus-visible {
+  outline: 3px solid #263f60;
+  outline-offset: 3px;
 }
 
 .image {
@@ -90,6 +103,16 @@
   width: 100%;
   height: auto;
   border-radius: 20px;
+  opacity: 0.85;
+  transform: scale(0.96);
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s ease;
+}
+
+.imageVisible {
+  opacity: 1;
+  transform: scale(1);
 }
 
 .captionRow {
@@ -126,10 +149,6 @@
     height: 55px;
 }
 
-.container:hover .imagePanel {
-  flex: 0 0 clamp(525px, 45%, 700px);
-}
-
 .imageCaption {
   font-size: 1rem;
   color: #3b4450;
@@ -164,6 +183,20 @@
   font-size: 1.5rem;
   font-weight: 600;
   color: #404d5d;
+}
+
+.sourceLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #404d5d;
+  text-decoration: none;
+}
+
+.sourceLink:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
+  border-radius: 12px;
 }
 
 .client {
@@ -209,7 +242,7 @@
 }
 
 .skill:hover {
-  transform: scale(1.08);
+  transform: scale(1.06);
   margin: 0px 5px;
 }
 
@@ -253,7 +286,7 @@
     flex: none;
     gap: 10px;
   }
-  
+
   .imageWrapper {
     max-width: 400px;
   }
@@ -286,5 +319,13 @@
 
   .takeaway {
     font-size: 0.9rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .image {
+    opacity: 1;
+    transform: none;
+    transition: none;
   }
 }
