@@ -12,21 +12,21 @@ import texasInstrumentsLogo from "../../assets/images/texas-instruments-logo.png
 import uMaineLogo from "../../assets/images/university-of-maine-logo.png"
 
 // Coding Project Images
-import iwacAppImage from "../../assets/images/coding/iwac-app.png"
-import gratitudeImage from "../../assets/images/coding/gratitude.png"
-import jobAggregatorImage from "../../assets/images/coding/job-aggregator.png"
-import poppinImage from "../../assets/images/coding/poppin.png"
+import iwacAppImage from "../../assets/images/coding/iwac-app.webp"
+import gratitudeImage from "../../assets/images/coding/gratitude.webp"
+import jobAggregatorImage from "../../assets/images/coding/job-aggregator.webp"
+import poppinImage from "../../assets/images/coding/poppin.webp"
 
 // Art Project Images
-import marinaImage from "../../assets/images/art/marina.jpg"
-import honeymoonImage from "../../assets/images/art/honeymoon.jpg"
-import piecesImage from "../../assets/images/art/pieces.png"
-import goldImage from "../../assets/images/art/gold.png"
+import marinaImage from "../../assets/images/art/marina.webp"
+import honeymoonImage from "../../assets/images/art/honeymoon.webp"
+import piecesImage from "../../assets/images/art/pieces.webp"
+import goldImage from "../../assets/images/art/gold.webp"
 
 // Music Images
-import backToBlackImage from "../../assets/images/music/back-to-black.png"
-import oldMoneyImage from "../../assets/images/music/old-money.png"
-import headlineImage from "../../assets/images/music/headline.png"
+import backToBlackImage from "../../assets/images/music/back-to-black.webp"
+import oldMoneyImage from "../../assets/images/music/old-money.webp"
+import headlineImage from "../../assets/images/music/headline.webp"
 
 // EXPERIENCES
 
