@@ -257,7 +257,7 @@ const oldMoney = {
 }
 
 
-const codingProjects = [iwacApp, gratitudeApp, jobAggregator, poppin];
+const codingProjects = [iwacApp, gratitudeApp, jobAggregator];
 const artProjects = [marina, gold, honeymoon, pieces];
 const musicProjects = [headline, backToBlack, oldMoney];
 
