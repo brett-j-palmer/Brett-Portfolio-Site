@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Header from '../../components/Header/Header.jsx';
 import Intro from '../../components/Intro/Intro.jsx';
 import Experience from '../../components/Experience/Experience.jsx';
@@ -267,10 +267,25 @@ const projectsByCategory = {
   Music: musicProjects,
 };
 const projectCategories = Object.keys(projectsByCategory);
+const projectImageSources = [
+  ...new Set(
+    Object.values(projectsByCategory).flatMap((projects) =>
+      projects.map(({ imageSource }) => imageSource)
+    )
+  ),
+];
 
 
 const HomeScreen = () => {
   const [activeCategory, setActiveCategory] = useState(projectCategories[0]);
+
+  useEffect(() => {
+    projectImageSources.forEach((imageSource) => {
+      const image = new Image();
+      image.decoding = 'async';
+      image.src = imageSource;
+    });
+  }, []);
 
   return (
     <div className = 'homeContainer'>
